@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63d580b924867c8c7a744e8501e938b2f83caeb3fa6e56aaa2dea626d2206206
-size 34
+numpy
+pandas
+matplotlib
+ipykernel
+seaborn
+scikit-learn
+qbstyles
+pandas_profiling
+catboost
+xgboost
+dill

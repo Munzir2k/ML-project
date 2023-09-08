@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7ee2885f381ee995d025472c1d060399ddd1e69f5e5c38895f4fb41cf6c62ba
-size 461
+README.md
+setup.py
+mlproject.egg-info/PKG-INFO
+mlproject.egg-info/SOURCES.txt
+mlproject.egg-info/dependency_links.txt
+mlproject.egg-info/requires.txt
+mlproject.egg-info/top_level.txt
+src/__init__.py
+src/exception.py
+src/logger.py
+src/utils.py
+src/components/__init__.py
+src/components/data_ingestion.py
+src/components/data_transformation.py
+src/components/model_trainer.py
+src/pipeline/__init__.py
+src/pipeline/predict_pipeline.py
+src/pipeline/train_pipeline.py
