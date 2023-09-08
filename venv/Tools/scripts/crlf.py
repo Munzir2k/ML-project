@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:188bb160b9b1262a4772e5d9dfc0374f5170e359c1867d3d7287967b58d2b2cb
-size 632
+#! /usr/bin/env python3
+"Replace CRLF with LF in argument files.  Print names of changed files."
+
+import sys, os
+
+def main():
+    for filename in sys.argv[1:]:
+        if os.path.isdir(filename):
+            print(filename, "Directory!")
+            continue
+        with open(filename, "rb") as f:
+            data = f.read()
+        if b'\0' in data:
+            print(filename, "Binary!")
+            continue
+        newdata = data.replace(b"\r\n", b"\n")
+        if newdata != data:
+            print(filename)
+            with open(filename, "wb") as f:
+                f.write(newdata)
+
+if __name__ == '__main__':
+    main()
